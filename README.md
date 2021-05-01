@@ -14,4 +14,7 @@ We were instructed to create a simple currency calculator using HTML, CSS and JS
 ```sh
 [ 05/01/2021 ] 
 - Copied all files from more extensive version, set up new git
+- Removed code responsible for 'dream' table.
+- Update footer.
+- Added header image with some text (but still need to find better background image).
 ```
