@@ -1,0 +1,27 @@
+.footer__paragraph {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    text-align: left;
+}
+.footer {
+    border: solid darkcyan;
+    border-width: 2px 0px 0px 0px;
+    display:flex;
+}
+.footer__item {
+    padding: 10px;
+    margin: auto;
+}
+.footer__item--first{
+    flex-grow: 1;
+}
+.footer__item--image{
+    padding: 0px;
+}
+.footer__mucha {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 17px;
+    color: darkcyan;
+    text-decoration: none;
+}

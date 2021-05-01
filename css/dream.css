@@ -1,0 +1,47 @@
+.dream {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    margin: 50px 0px;
+}
+
+.dream--hide {
+    display: none;
+}
+
+.dream__table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.dream__tableCell {
+    border: 1px solid #777;
+    padding: 15px;
+    text-align: center;
+}
+
+.dream__tableHeader {
+    background-color: #f4a460;
+}
+
+.dream__caption {
+    caption-side: bottom;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.dream__historicalValue {
+    font-weight: 900;
+}
+
+.dream__list {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    margin: 50px 0px;
+}
+
+.dream__listItem {
+    padding: 10px;
+}
+.dream__lostErnings {
+    font-weight: 900;
+}

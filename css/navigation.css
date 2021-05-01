@@ -1,0 +1,27 @@
+.navigation {
+    margin: 50px 10px;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
+
+.navigation__list {
+    padding: 0px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.navigation__listItem {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: hsl(180, 100%, 35%);
+}
+
+.navigation__listItem:hover {
+    background-color: hsl(180, 100%, 20%);
+    margin-left: 20px;
+}
+
+.navigation__listItem:active {
+    background-color: hsl(180, 100%, 15%);
+    margin-left: 20px;
+}

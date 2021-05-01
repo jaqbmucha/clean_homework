@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.bodyContainer {
+    max-width: 1000px;
+    padding: 10px;
+    margin: auto;
+}
+
+.headerText {
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin: 20px 10px;
+    line-height: 1.5;
+}
+
+.headerTextBackground {
+    background-color: darkcyan;
+    padding: 10px;
+}
+
+.main {
+    padding: 0px 10px;
+}
+
+.h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: hsl(180, 100%, 35%);
+    padding: 5px 5px 5px 20px;
+}

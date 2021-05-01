@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto- kalkulator</title>
+    <meta property="og:image" content="img/share.png">
+    <link rel="icon" href="img/fly_original.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:ital,wght@0,300;1,300;1,900&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/calculator.css" rel="stylesheet">
+    <link href="css/currencySettings.css" rel="stylesheet">
+    <link href="css/answer.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/dream.css" rel="stylesheet">
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/calc.js"></script>
+    
+</head>
+
+<body class="bodyContainer">
+    <h1 class="headerText"><span class="headerTextBackground">Wybierz co chciałbyś obliczyć.</span></h1>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__listItem js-crypto-panel">
+                Sprawdź ile cryptowaluty możesz zakupić.
+            </li>
+            <li class="navigation__listItem js-settings-panel">
+                Zmień ustawienia poszczególnych walut.
+            </li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="calculator calculator--hide">
+            <form class="calculator__form js-form-calc">
+                <fieldset class="calculator__fieldset">
+                    <legend class="calculator__legend">Wprowadź odpowiednie dane</legend>
+                    <p class="calculator__paragraph js-currency">
+                        <label class="calculator__labelCurrency">
+                            <input type="radio" name="currencyOwned" value="pln" class="js-radio-pln" checked> Polski
+                            Złoty (PLN)
+                        </label>
+                        <label class="calculator__labelCurrency">
+                            <input type="radio" name="currencyOwned" value="eur" class="js-radio-eur"> Euro (EUR)
+                        </label>
+                        <label class="calculator__labelCurrency">
+                            <input type="radio" name="currencyOwned" value="gbp" class="js-radio-gbp"> Funt Brytyjski
+                            (GBP)
+                        </label>
+                        <label class="calculator__labelCurrency">
+                            <input type="radio" name="currencyOwned" value="usd" class="js-radio-usd"> Dolar Amerykański
+                            (USD)
+                        </label>
+                    </p>
+                    <p class="calculator__paragraph calculator__paragraph--borderLeft">
+                        <label class="calculator__labelValue">
+                            <span class="calculator__currencyValue js-currencyTypeText">Ile posiadasz złotych:</span>
+                            <input type="number" class="calculator__field js-currencyOwned" min="1" step="1" required>
+                        </label>
+                    </p>
+                    <input type="submit" class="js-submitCalc" value="Sprawdź ile możesz kupić!">
+                </fieldset>
+            </form>
+        </section>
+        <section class="answer answer--hide">
+            <div class="answer__header">
+                <p class="answer__paragraph">Za posiadane fundusze możesz kupić aktualnie:</p>
+            </div>
+            <ul class="answer__list">
+                <li class="answer__listItem"><span class="answer__howMany js-howMany-btc">0</span> bitcoina (BTC).
+                </li>
+                <li class="answer__listItem"><span class="answer__howMany js-howMany-eth">0</span> ethenerum
+                    (ETH).</li>
+                <li class="answer__listItem"><span class="answer__howMany js-howMany-bnb">0</span> binance coin
+                    (BNB).</li>
+            </ul>
+        </section>
+        <section class="dream dream--hide">
+            <h2 class="h2">Zobacz co by było gdyby tą kwotę zainwestować w kryptowalute wcześniej:</h2>
+            <p>
+            <ul class="dream__list">
+                <li class="dream__listItem">
+                    Cena bitcoina:
+                    <ul>
+                        <li class="dream__listItem">1 kwietnia 2020 roku: <span
+                                class="dream__historicalValue js-btc20-value">24243.27</span> złotych.
+                        </li>
+                        <li class="dream__listItem">1 kwietnia 2019 roku: <span
+                                class="dream__historicalValue js-btc19-value">15461.00</span> złotych.
+                        </li>
+                        <li class="dream__listItem">1 kwietnia 2018 roku: <span
+                                class="dream__historicalValue js-btc18-value">26373.87</span> złotych.
+                        </li>
+                    </ul>
+                </li>
+                <li class="dream__listItem">
+                    Cena ethenerum:
+                    <ul>
+                        <li class="dream__listItem">1 kwietnia 2020 roku: <span
+                                class="dream__historicalValue js-eth20-value">503.19</span> złotych.
+                        </li>
+                        <li class="dream__listItem">1 kwietnia 2019 roku: <span
+                                class="dream__historicalValue js-eth19-value">532.77</span> złotych.
+                        </li>
+                        <li class="dream__listItem">1 kwietnia 2018 roku: <span
+                                class="dream__historicalValue js-eth18-value">1496.08</span> złotych.
+                        </li>
+                    </ul>
+                </li>
+                <li class="dream__listItem">
+                    Cena binance coin:
+                    <ul>
+                        <li class="dream__listItem">1 kwietnia 2020 roku: <span
+                                class="dream__historicalValue js-bnb20-value">47.38</span> złotych.
+                        </li>
+                        <li class="dream__listItem">1 kwietnia 2019 roku: <span
+                                class="dream__historicalValue js-bnb19-value">65.57</span> złotych.
+                        </li>
+                        <li class="dream__listItem">1 kwietnia 2018 roku: <span
+                                class="dream__historicalValue js-bnb18-value">42</span> złote.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <table class="dream__table">
+                <caption class="dream__caption">Ale niestety tak nie było i straciłeś dużo $$$.</caption>
+                <tr class="dream__tableRow">
+                    <th class="dream__tableCell dream__tableHeader" scope="col"> &nbsp; </th>
+                    <th class="dream__tableCell dream__tableHeader" scope="col">Bitcoin (BTC)</th>
+                    <th class="dream__tableCell dream__tableHeader" scope="col">Ethenerum (ETH)</th>
+                    <th class="dream__tableCell dream__tableHeader" scope="col">Binance Coin (BNB)</th>
+                </tr>
+                <tr class="dream__tableRow">
+                    <th class="dream__tableCell dream__tableHeader" scope="row">1 kwietnia 2020</th>
+                    <td class="dream__tableCell">Ilość: <span class="js-dream_btc20">0</span><br>Zysk: <span
+                            class="dream__lostErnings js-dream_btc20Now">0</span> zł.
+                    </td>
+                    <td class="dream__tableCell">Ilość: <span class="js-dream_eth20">0</span><br>Zysk: <span
+                            class="dream__lostErnings js-dream_eth20Now">0</span> zł.
+                    </td>
+                    <td class="dream__tableCell">Ilość: <span class="js-dream_bnb20">0</span><br>Zysk: <span
+                            class="dream__lostErnings js-dream_bnb20Now">0</span> zł.
+                    </td>
+                </tr>
+                <tr class="dream__tableRow">
+                    <th class="dream__tableCell dream__tableHeader" scope="row">1 kwietnia 2019</th>
+                    <td class="dream__tableCell">Ilość: <span class="js-dream_btc19">0</span><br>Zysk: <span
+                            class="dream__lostErnings js-dream_btc19Now">0</span> zł.
+                    </td>
+                    <td class="dream__tableCell">Ilość: <span class="js-dream_eth19">0</span><br>Zysk: <span
+                            class="dream__lostErnings js-dream_eth19Now">0</span> zł.
+                    </td>
+                    <td class="dream__tableCell">Ilość: <span class="js-dream_bnb19">0</span><br>Zysk: <span
+                            class="dream__lostErnings js-dream_bnb19Now">0</span> zł.
+                    </td>
+                </tr>
+                <tr class="dream__tableRow">
+                    <th class="dream__tableCell dream__tableHeader" scope="row">1 kwietnia 2018</th>
+                    <td class="dream__tableCell">Ilość: <span class="js-dream_btc18">0</span><br>Zysk: <span
+                            class="dream__lostErnings js-dream_btc18Now">0</span> zł.
+                    </td>
+                    <td class="dream__tableCell">Ilość: <span class="js-dream_eth18">0</span><br>Zysk: <span
+                            class="dream__lostErnings js-dream_eth18Now">0</span> zł.
+                    </td>
+                    <td class="dream__tableCell">Ilość: <span class="js-dream_bnb18">0</span><br>Zysk: <span
+                            class="dream__lostErnings js-dream_bnb18Now">0</span> zł.
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="currencySetting currencySetting--hide">
+            <form class="currencySetting__form">
+                <fieldset class="currencySetting__fieldset">
+                    <legend class="currencySetting__legend">Zmodyfikuj aktualne kursy <strong>w stosunku do
+                            PLN</strong>:</legend>
+                    <p class="currencySetting__paragraph">
+                        <label class="currencySetting__label">
+                            <span class="currencySetting__labelText">Kurs euro (EUR):</span>
+                            <input type="number" class="currencySetting_field js-eur-value" value="4.5767" min="1"
+                                required>
+                        </label>
+                    </p>
+                    <p class="currencySetting__paragraph">
+                        <label class="currencySetting__label">
+                            <span class="currencySetting__labelText">Kurs funta brytyjskiego (GBP):</span>
+                            <input type="number" class="currencySetting_field js-gbp-value" value="5.2517" min="1"
+                                required>
+                        </label>
+                    </p>
+                    <p class="currencySetting__paragraph">
+                        <label class="currencySetting__label">
+                            <span class="currencySetting__labelText">Kurs dolara amerykańskiego (USD):</span>
+                            <input type="number" class="currencySetting_field js-usd-value" value="3.7938" min="1"
+                                required>
+                        </label>
+                    </p>
+                    <p class="currencySetting__paragraph">
+                        <label class="currencySetting__label">
+                            <span class="currencySetting__labelText">Wartość bitcoina (BTC):</span>
+                            <input type="number" class="currencySetting_field js-btc-value" value="187689.8" min="1"
+                                required>
+                        </label>
+                    </p>
+                    <p class="currencySetting__paragraph">
+                        <label class="currencySetting__label">
+                            <span class="currencySetting__labelText">Wartość ethenerum (ETH):</span>
+                            <input type="number" class="currencySetting_field js-eth-value" value="8705.38" min="1"
+                                required>
+                        </label>
+                    </p>
+                    <p class="currencySetting__paragraph">
+                        <label class="currencySetting__label">
+                            <span class="currencySetting__labelText">Wartość binance coin (BNB):</span>
+                            <input type="number" class="currencySetting_field js-bnb-value" value="1904.68" min="1"
+                                required>
+                        </label>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__item footer__item--first"><p class="footer__paragraph">Dziękuje za korzystanie z kalkulatora i życzę samych sukcesów!</p></div>
+        <div class="footer__item footer__item--image"><img src="img/fly_original.png" class="footer__logo" height="50px"></div>
+        <div class="footer__item"><a href="https://www.mucha.codes" class="footer__mucha">mucha.codes</a></div>
+    </footer>
+
+</body>
+
+</html>

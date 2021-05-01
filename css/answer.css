@@ -1,0 +1,27 @@
+.answer {
+    margin: 50px 0;
+    padding-left: 20px;
+    border: 1px solid;
+    border-left: 12px solid;
+    border-color: hsl(180, 100%, 35%);
+}
+
+.answer--hide {
+    display: none;
+}
+
+.answer__paragraph {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.answer__listItem {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.answer__howMany {
+    color: darkcyan;
+    font-weight: 900;
+}
