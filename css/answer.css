@@ -4,6 +4,7 @@
     border: 1px solid;
     border-left: 12px solid;
     border-color: hsl(180, 100%, 35%);
+    border-radius: 5px;
 }
 
 .answer--hide {
