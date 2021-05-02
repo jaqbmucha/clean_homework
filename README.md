@@ -17,4 +17,7 @@ We were instructed to create a simple currency calculator using HTML, CSS and JS
 - Removed code responsible for 'dream' table.
 - Update footer.
 - Added header image with some text (but still need to find better background image).
+
+[05/02/2021]
+- Menu JS has been roworked - now works through the functions
 ```
