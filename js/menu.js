@@ -1,25 +1,25 @@
-let cryptoMenu = document.querySelector(".js-crypto-panel");
-let cryptoElement = document.querySelector(".calculator");
-let dreamElement = document.querySelector(".dream");
-let answerElement = document.querySelector(".answer");
+{
+    const showHideSeetingOnClick = () => {
+        const settingsElement = document.querySelector(".currencySetting");
+        settingsElement.classList.toggle("currencySetting--hide");
+    };
 
-let worthMenu = document.querySelector(".js-worth-panel");
-// let worthElement = document.querySelector(".calculator");
+    const initSettings = () => {
+        const settingsMenu = document.querySelector(".js-settings-panel");
+        settingsMenu.addEventListener("click", showHideSeetingOnClick);
+    };
 
-let settingsElement = document.querySelector(".currencySetting");
-let settingsMenu = document.querySelector(".js-settings-panel");
+    const showHideCalculatorOnClick = () => {
+        const cryptoElement = document.querySelector(".calculator");
+        const answerElement = document.querySelector(".answer");
 
-settingsMenu.addEventListener("click", () => {
-    settingsElement.classList.toggle("currencySetting--hide");
-});
-
-/* worthMenu.addEventListener("click", () => {
-    worthElement.classList.toggle("currencySetting--hide");
-}); */
-
-
-cryptoMenu.addEventListener("click", () => {
-    cryptoElement.classList.toggle("calculator--hide");
-    answerElement.classList.toggle("answer--hide");
-    dreamElement.classList.toggle("dream--hide");
-});
+        cryptoElement.classList.toggle("calculator--hide");
+        answerElement.classList.toggle("answer--hide");
+    };
+    const initMenu = () => {
+        const cryptoMenu = document.querySelector(".js-crypto-panel");
+        cryptoMenu.addEventListener("click", showHideCalculatorOnClick);
+    };
+    initMenu();
+    initSettings();
+}
