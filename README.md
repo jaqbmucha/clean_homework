@@ -16,7 +16,7 @@ We were instructed to create a simple currency calculator using HTML, CSS and JS
 - Whole calculator JS has been reworked - now works like menu - through the functions.
 [05/02/2021]
 - Menu JS has been roworked - now works through the functions.
-[ 05/01/2021 ] 
+[05/01/2021] 
 - Copied all files from more extensive version, set up new git.
 - Removed code responsible for 'dream' table.
 - Update footer.
