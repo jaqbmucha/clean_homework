@@ -10,14 +10,15 @@ We were instructed to create a simple currency calculator using HTML, CSS and JS
 [GitHub] (https://jaqbmucha.github.io/clean_homework/)
 
 
-### What i have done.
+### What i have done:
 ```sh
+[05/03/2021]
+- Whole calculator JS has been reworked - now works like menu - through the functions.
+[05/02/2021]
+- Menu JS has been roworked - now works through the functions.
 [ 05/01/2021 ] 
-- Copied all files from more extensive version, set up new git
+- Copied all files from more extensive version, set up new git.
 - Removed code responsible for 'dream' table.
 - Update footer.
 - Added header image with some text (but still need to find better background image).
-
-[05/02/2021]
-- Menu JS has been roworked - now works through the functions
 ```
