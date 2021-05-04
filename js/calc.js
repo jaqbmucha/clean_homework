@@ -28,7 +28,7 @@
         formElement.addEventListener("change", changeTextOnClick);
     };
 
-    const switchCurrency = (BTCexchange, ETHexchange, BNBexchange, EURexchange, GBPexchange, USDexchange) => {
+    const calculateCryptoCurrencies = (BTCexchange, ETHexchange, BNBexchange, EURexchange, GBPexchange, USDexchange) => {
         const ownedElement = document.querySelector(".js-currencyOwned");
         const owned = +ownedElement.value;
         const BTCcanBuy = document.querySelector(".js-howMany-btc");
@@ -76,7 +76,7 @@
             const GBPexchange = +GBPexchangeElement.value;
             const USDexchange = +USDexchangeElement.value;
 
-            switchCurrency(BTCexchange, ETHexchange, BNBexchange, EURexchange, GBPexchange, USDexchange);
+            calculateCryptoCurrencies(BTCexchange, ETHexchange, BNBexchange, EURexchange, GBPexchange, USDexchange);
 
         });
     };
