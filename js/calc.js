@@ -1,9 +1,9 @@
 {
-    let formElement = document.querySelector(".js-form-calc");
-    let PLNradio = document.querySelector(".js-radio-pln");
-    let EURradio = document.querySelector(".js-radio-eur");
-    let GBPradio = document.querySelector(".js-radio-gbp");
-    let USDradio = document.querySelector(".js-radio-usd");
+    const formElement = document.querySelector(".js-form-calc");
+    const PLNradio = document.querySelector(".js-radio-pln");
+    const EURradio = document.querySelector(".js-radio-eur");
+    const GBPradio = document.querySelector(".js-radio-gbp");
+    const USDradio = document.querySelector(".js-radio-usd");
 
     const changeTextOnClick = () => {
         const changeText = document.querySelector(".js-currencyTypeText");
